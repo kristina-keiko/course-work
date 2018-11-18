@@ -1,0 +1,109 @@
+body{
+
+}
+.main{
+
+}
+.div{
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin:0 auto; 
+}
+.container:after{
+    content: '';
+    display: block;
+    background: gray;
+}
+/* .head .text{ 
+	text-align: center;
+	font: 24px 'Kaushan Script', cursive ;
+	color: #333333;
+	margin-bottom: 25px;
+}
+.head .title{
+	text-align: center;
+	font: bold 30px 'Montserrat', sans-serif ;
+	text-transform: uppercase;
+	color: #333333;
+}
+.main .title:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #f38181;
+	margin: 40px auto 47px;
+}*/
+.header {
+	background: url("../images/layer.png") no-repeat center top /cover;
+}
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-logo a { 
+	text-decoration: none;
+	color: #ffffff;
+	font: bold 30px 'Montserrat', sans-serif ;
+}
+.navbar-menu ul {
+	display: inline-flex;
+	text-transform: uppercase;
+	list-style: none;
+}
+.navbar-menu ul li{
+	font:  14px 'Montserrat', sans-serif ;
+	margin-right:57px;
+}
+.navbar-menu ul li:last-child{
+	margin-right:0;
+}
+.navbar-menu ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+ .head_main p{ 
+	text-align: center;
+	font: 72px 'Kaushan Script', cursive;
+	color: #ffffff;
+	background: red;
+}
+/*
+.head_main h1{
+	font: bold 150px 'Montserrat', sans-serif ;
+	color: #ffffff;
+	text-align: center;
+}
+.head_main h1:after{
+	content: " ";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 71px auto 50px;
+}
+.head_button {
+	text-align: center;
+	padding-bottom: 157px;
+}
+.head_button a{
+	background: transparent;
+	border: 3px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 39px;
+}
+.about_us_subtitle  {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.about_us_subtitle p{
+	font: 15px 'Roboto', sans-serif ;
+	color: #999999;
+}
