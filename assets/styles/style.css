@@ -32,51 +32,53 @@ div{
 	background: #f38181;
 	margin: 40px auto 0;
 }
-.head .subtitle{
+.head .subtitle {
 	font:  15px 'Roboto', sans-serif;
 	text-align: center;
 	color: #999999;	
 	padding-top: 47px;
 }
-.banner{
-	background: url("../images/layer.png") no-repeat center top /cover;
+.banner {
+	background: url("../images/layer.png") no-repeat center top /100% 100%;
+	/* background: url("../images/layer.png") no-repeat center top /contain; */
 }
-.navbar{
+.navbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: 40px;
 }
-.navbar-logo{
+.navbar-logo {
 	
 }
-.navbar-logo a{
+.navbar-logo a {
 	text-decoration: none;
 	color: #ffffff;
-	font: bold 30px 'Montserrat', sans-serif ;
+	font: bold 30px 'Montserrat', sans-serif;
 }
 .navbar-logo a:hover{
 	color: #fce38a;
 	text-decoration: underline;
 }
-.navbar-menu ul li{
+.navbar-menu ul li {
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	margin-left: 50px;
 	
 }
-.navbar-menu ul li a{
+.navbar-menu ul li a {
 	text-decoration: none;
 	color: #ffffff;
 	text-transform: uppercase;
-	font:  14px 'Montserrat', sans-serif ;
-}
-.navbar-menu ul li a:hover{
-	/* text-decoration: underline ; как сделать с помощью этого свойства? */
-	display:inline-block;
-	border-bottom:3px solid #fce38a ;
+	font:  14px 'Montserrat', sans-serif;
+	border-bottom:3px solid transparent;
 	padding-bottom:12px;
+}
+.navbar-menu ul li a:hover {
+	display:inline-block;
+	border-bottom:3px solid #fce38a;
 	color: #fce38a;
 }
 
@@ -85,6 +87,7 @@ header .main-text{
 	font: 72px 'Kaushan Script', cursive;
 	color: #ffffff;
 	margin-bottom: 43px;
+	margin-top: 150px;
 }
 header .main-title{
 	font: bold 150px 'Montserrat', sans-serif ;
@@ -148,7 +151,7 @@ header .button :hover{
 	
 }
 .about_us .text{
-	margin-top: 90px;
+	margin-top: 92px;
 }
 .about_us .subtitle{
 	margin-bottom: 101px;
@@ -167,12 +170,16 @@ header .button :hover{
 	width: 380px;
 	height: 250px;
 	position: relative;
+	transition: transform 0.3s;
 }
-.after{
+.pics .image-container:hover {
+	transform: translate(-10px, -10px);
+}
+.pics .after{
 	text-align: center;
 	padding-top: 104px;
 }
-.after p{
+.pics.after p{
 	font: bold 18px 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
@@ -260,20 +267,29 @@ header .button :hover{
 }
 
 .feauture{
-	background-image: url('../images/feauture.png')  ;
+	background-image: url('../images/feauture.png') ;
 	background-repeat: no-repeat;
 }
 .feauture .text{
-	padding-top: 110px;
+	padding-top: 91px;
 }
-.images-ipad{
-	text-align: center;
-	display: block;
-	width: 477px;
-	height: 581px;
-}
+ .images-ipad-iphone{
+	position:relative;
+} 
+.images-ipad{ 
+	position:relative;
+	top: 5px; 
+	left: 280px; 
+	z-index: 1;
+	}
 .images-iphone{
-	display: inline-block;
+	position:absolute;
+	top: 240px;
+	left: 685px;
+	z-index: 2;
+}
+.service_2 .text{
+	margin-top: 110px;
 }
 .service_2 .title{
 	margin-top: ;
@@ -299,32 +315,94 @@ header .button :hover{
 	display: inline-flex;
 	max-width: 600px;
 	border: 1px solid #e5e5e5;
+	height: 57px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.main-service_2_row:first-child{
+	margin-bottom:0;
+}
+.main-service_2_row:last-child{
+	margin-bottom:0;
+}
+.main-service_2_row .icon{
+	padding: 14px 12px;
 }
 .main-service_2_row p{
 	text-transform: uppercase;
 	font: 14px 'Montserrat', sans-serif;
-	padding: 14px 0;
-	
+	padding: 22px 0;	
+}
+.main-service_2_row .arrow{
+	position: absolute;
+	right: 19px;
+	top: 23px;
+}
+.main-service_2_row_text{
+	display: inline-flex;
+	max-width: 600px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+	padding: 19px 24px 24px  19px ;
+	font: italic 15px/1.6 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #999999;
+
+}
+.main-service_2_row_text:after{
+	content: "";
+	border-left: 5px solid ; /* Параметры линии */ 
+	margin-left: 24px; /* Отступ слева */
+	height: 142px;
+	border-radius: 5px;
 }
 .quote{
 	background-color: #f8f8f8;
 }
-.quote-main .speech{
-	
+.quote-main{
+	display: inline-flex;
+	padding: 70px 25px ;
 }
-.quote-main .text{
-	display: inline-block;
-	font: italic 15px 'Roboto', sans-serif;
-	color: #999999;
-	margin-left: 60px ;
-	margin-right: 74px;
-}
-.quote-main .text:after{
-	content: "";
+.messages-icon img{
 	display: block;
+	outline: 3px solid #95e1d3; 
+	padding: 41px;
+	margin: 0 60px 0 75px;
+}
+.quote-icon {
+	margin-top: 70px;
+}
+
+.quote-description .text{
+	margin-right: 75px;
+	font: italic 24px/1.5 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #999999;
+}
+.quote-description .name{
+	font: 24px 'Kaushan Script', cursive;
+	margin-top: 10px;
+}
+.quote-description .name:before{
+	content: "";
+	display: inline-block;
 	width: 60px;
 	height: 3px;
-	background: #f38181;
+	background-color: #f38181;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.our_team .text{
+	margin-top: 95px;
+}
+.our_team .image-container {
+	width: 380px;
+	height: 470px;
+	position: relative;
+	transition: transform 0.3s;
+}
+.our_team .image-container:hover {
+	transform: translate(-10px, -10px);
 }
 .our_team .subtitle{
 	margin-bottom: 92px;
@@ -335,8 +413,50 @@ header .button :hover{
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 31px;
+
 }
-.our_team_description{
+.image-container .our_team_social{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: #FFF;		
+}
+
+.image-container:hover .our_team_social {
+    display: block;
+    background: -webkit-linear-gradient( 90deg, rgb(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 90%);
+}
+
+.our_team_social_link{
+	width: 56px;
+	height: 56px;
+	text-align: center;
+	line-height: 56px;
+}
+
+.our_team_social_overlay {
+	margin-top: 207px;
+	text-align: center;
+}
+
+.our_team_social_overlay a {
+	color: #f38181;
+	display:inline-block;
+	background-color: #fce38a;
+	margin: auto;
+}
+.our_team_social_overlay i {
+	vertical-align: middle;
+}
+
+.our_team_social_overlay a:hover {
+	background-color: #f38181;
+	color: white;
+}
+.our_team_description {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -368,41 +488,66 @@ header .button :hover{
 .work .subtitle{
 	margin-bottom: 102px;
 }
-.work-images {
+ .work-images {
 	display: inline-flex;
 	flex-direction: row;
+	width: 100%;	
+}
+.work-images-columns {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+
+.work-images-columns img{
 	width: 100%;
-}
-.work-images-column{
-	max-width: 25%;
-}
-.work-images-column img:hover {
-	
 }
 .testimonial-main{
 	display: inline-flex;
-}
-.testimonial-main-icon-left{
-	margin-left: 22px;
-}
-.testimonial-main_photo{
-	margin: 0 30px 0 45px;
+	padding: 100px 25px 130px;
 }
 .testimonial-main-text{
-	padding-right: 72px;
+	margin: 40px 75px 0 30px;
 }
+.testimonial-text{
+	font: italic 24px/1.5 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #999999;
+}
+.testimonial-name{
+	font: 24px 'Kaushan Script', cursive;
+	display: inline-block;
+}
+.testimonial-name:before{
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.testimonial-main .speech{
+	margin-left: 45px;
 
+}
+.testimonial-main-icon img{
+	margin-top: 94px;
+}
 .what_people_say{
 	background-image: url('../images/Layer53.png');
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
 }
-.what_people_say .text{
+.what_people_say_main .text{
 	padding-top: 112px;
 }
 .people{
 	margin-top: 89px;
 	display: flex;
-	flex-flow: row wrap;
-	vertical-align: ; 
+	flex-flow: row wrap; 
 	padding-bottom: 64px;
 }
 .person{
@@ -416,6 +561,7 @@ header .button :hover{
 }
 .user_information{
 	max-width: 375px;
+	text-align: left;
 
 }
 .user_information_name{
@@ -495,6 +641,9 @@ header .button :hover{
 	color: #999999;
 	font-weight: 300;
 }
+.views_and_comments img {
+	vertical-align: middle;
+}
 .map {
 	background-image: url('../images/map.png');
 }
@@ -573,7 +722,6 @@ header .button :hover{
 .sending label input  {
 	max-width: 230px;
 	width: 100%;
-	padding: ;
 }
 .sending input::placeholder{
 	font: italic 15px 'Roboto', sans-serif;
@@ -591,11 +739,12 @@ input[type="Email"] {
 	color: #fff;
 	text-decoration: none;
 	background-color: #95e1d3;
-	padding: 15px 34px;
+	padding: 13px 34px;
 	text-align: center;
 	border: none;
 	font: bold 14px 'Montserrat', sans-serif;
-}
+	display: inline-block;
+	}
 .follou_us .icon i:last-child{
 	margin-right: 0;
 }

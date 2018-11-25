@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/styles/all.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet"  href="assets/styles/style.css" >
@@ -30,7 +31,6 @@
 						<li><a href="#">contact</a></li>
 						<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
 						<li><a href="#"><i class="fas fa-search"></i></a></li>
-
 					</ul>
 				</div>
 			</nav>
@@ -185,11 +185,11 @@
 				<p class="text"> For all devices</p>
 				<p class="title">Unique design</p>
 			</div>
-			<div class="images-ipad">
-				<img src="assets/images/display.png">
-			</div>
-			<div class="images-iphone">
-				<img src="assets/images/white.png">
+			<div class="images-ipad-iphone">
+				<div images-ipad>
+					<img class="images-ipad" src="assets/images/display.png">
+					<img class="images-iphone" src="assets/images/white.png">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -208,16 +208,14 @@
 					<div class="main-service_2_row">
 						<div class="icon">
 						 	<img src="assets/images/PICTURE.png">
-						 </div
+						 </div>
 						<p>Photography</p>
 						<div class="arrow">
 							<img src="assets/images/ARROW _ DOWN.png">
 						</div>
 					</div>
-					<div class="main-service_2_form">
-						<label>
-							<input type="textarea" name="">
-						</label>	
+					<div class="main-service_2_row_text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					<div class="main-service_2_row">
 						<div class="icon">
@@ -244,11 +242,19 @@
 	<div class="section quote">
 		<div class="container">
 			<div class=" quote-main">
-				<img src="assets/images/стрелочка-лево.png">
-				<img class="speech" src="assets/images/speech.png">
-				<p class="text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "</p>
-				<img src="assets/images/стрелочка-право.png">
-				<p class="name">Jon Doe</p>
+				<div class="quote-icon">
+					<img src="assets/images/стрелочка-лево.png">
+				</div>
+				<div class="messages-icon">
+					<img  src="assets/images/speech.png">
+				</div>
+				<div class="quote-description">
+					<p class="text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "</p>
+					<p class="name">Jon Doe</p>
+				</div>
+				<div class="quote-icon">
+					<img src="assets/images/стрелочка-право.png">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -260,9 +266,63 @@
 				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
 			</div>
 			<div class="our_team_photo">
-				<img src="assets/images/Layer16.png">
-				<img src="assets/images/Layer19.png">
-				<img src="assets/images/Layer18.png">	
+				<div class="image-container">
+					<img src="assets/images/Layer16.png">
+					<div class="our_team_social">
+						<div class="our_team_social_overlay">
+							<a href="#"  class="our_team_social_link">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="image-container">
+					<img src="assets/images/Layer19.png">
+					<div class="our_team_social">
+						<div class="our_team_social_overlay">
+							<a href="#"  class="our_team_social_link">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="image-container">
+					<img src="assets/images/Layer18.png">
+					<div class="our_team_social">
+						<div class="our_team_social_overlay">
+							<a href="#"  class="our_team_social_link">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+							<a href="#" class="our_team_social_link">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="our_team_description">
 				<div class="our_team_bio" >
@@ -295,34 +355,34 @@
 		</div>
 	</div>
 	<div class="section work-images">
-		<div class="work-images-column">
+		<div class="work-images-columns">
 			<img src="assets/images/Layer26.png">
 			<img src="assets/images/Layer35.png">
 		</div>
-		<div class="work-images-column">
-			<img src="assets/images/Layer33.png">
-			<img src="assets/images/Layer29.png">
+		<div class="work-images-columns">
+			<img src="assets/images/Layer33.png"  >
+			<img src="assets/images/Layer29.png"  >
 		</div>
-		<div class="work-images-column">
+		<div class="work-images-columns">
 			<img src="assets/images/Layer34.png">
 		</div>
-		<div class="work-images-column">
-			<img src="assets/images/Layer31.png">
-			<img src="assets/images/Layer32.png">
+		<div class="work-images-columns">
+			<img src="assets/images/Layer31.png"  >
+			<img src="assets/images/Layer32.png"  >
 		</div>
 	</div>
 	<div class="section testimonial">
 		<div class="container">
 			<div class=" testimonial-main">
-				<div class="testimonial-main-icon-left">
-					<img class="" src="assets/images/стрелочка-лево.png">
+				<div  class="testimonial-main-icon" >
+					<img src="assets/images/стрелочка-лево.png">
 				</div>
-				<div class="testimonial-main_photo">
-					<img class="speech" src="assets/images/Layer36.png">
+				<img class="speech" src="assets/images/Layer36.png">
+				<div class="testimonial-main-text">
+					<p class="testimonial-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
+					<p class="testimonial-name">Joshua Earle</p>
 				</div>
-				<p class="testimonial-main-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
-				<p class="name">Jon Doe</p>
-				<div class="testimonial-main-icon-rigt">
+				<div class="testimonial-main-icon" >
 					<img src="assets/images/стрелочка-право.png">
 				</div>
 			</div>
@@ -330,7 +390,7 @@
 	</div>
 	<div class="section what_people_say">
 		<div class="container">
-			<div class="head what_people_say">
+			<div class="head what_people_say_main">
 				<p class="text">Happy Clients</p>
 				<p class="title">What people say</p>
 			</div>
@@ -391,9 +451,13 @@
 						<p class="blog_calenadar_description_title">Lorem ipsum dolor sit amet</p>
 						<p class="blog_calenadar_description_subtitle">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<div class="views_and_comments">
-							<img class="view_img" src="assets/images/VIEW.png">
+							<div>
+								<img class="view_img" src="assets/images/VIEW.png">
+							</div>
 							<p class="views">542</p>
-							<img class="comment_img" src="assets/images/SPEECHBUBBLE2.png">
+							<div>
+								<img class="comment_img" src="assets/images/SPEECHBUBBLE2.png">
+							</div>
 							<p class="comments">17</p>
 						</div>
 					</div>	
@@ -404,9 +468,13 @@
 						<p class="blog_calenadar_description_title">sed do eiusmod tempor</p>
 						<p  class="blog_calenadar_description_subtitle">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<div class="views_and_comments">
-							<img class="view_img" src="assets/images/VIEW.png">
+							<div>
+								<img class="view_img" src="assets/images/VIEW.png">
+							</div>
 							<p class="views">992</p>
-							<img class="comment_img" src="assets/images/SPEECHBUBBLE2.png">
+							<div>
+								<img class="comment_img" src="assets/images/SPEECHBUBBLE2.png">
+							</div>
 							<p class="comments">42</p>
 						</div>
 					</div>
@@ -417,9 +485,13 @@
 						<p class="blog_calenadar_description_title">incididunt ut labore et dolore </p>
 						<p  class="blog_calenadar_description_subtitle">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<div class="views_and_comments">
-							<img class="view_img" src="assets/images/VIEW.png">
+							<div>
+								<img class="view_img" src="assets/images/VIEW.png">
+							</div>
 							<p class="views">1560</p>
-							<img class="comment_img" src="assets/images/SPEECHBUBBLE2.png">
+							<div>
+								<img class="comment_img" src="assets/images/SPEECHBUBBLE2.png">
+							</div>
 							<p class="comments">98</p>
 						</div>
 					</div>	
